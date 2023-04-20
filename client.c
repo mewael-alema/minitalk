@@ -41,8 +41,8 @@ int	main(int argc, char **argv)
 	if (pid <= 0)
 		return (-1);
 	message = argv[2];
-	i = -1;
+	i = 0;
 	while (message[i++])
 		send_chars(message[i], pid);
-	send_chars(message[i], pid);
+	//send_chars(message[i], pid);
 }

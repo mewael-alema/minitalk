@@ -21,9 +21,9 @@ void	ft_signal_receiver(int signal)
 	while (i < 8)
 	{
 		if (signal == SIGUSR2)
-			printf("SIGUSR2 - %d", 1);
+			printf("SIGUSR2 - %d \n", 0);
 		else
-			printf("SIGUSR1 - %d", 2);
+			printf("SIGUSR1 - %d \n", 1);
 		i++;
 	}
 }
